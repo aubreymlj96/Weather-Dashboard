@@ -1,0 +1,84 @@
+header {
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
+#city {
+  width: 400px;
+
+}
+
+.container2 {
+    padding: 30px;
+    background-color: lightblue;
+    border-radius: 25px;
+} 
+
+.card-body {
+    background-color: lightskyblue;
+  }
+  
+  #searched {
+    display: block;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 30px;
+  }
+  .date-of {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+  }
+  .humidity {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+  }
+  .wind {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .temperature {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+  }
+  .actual-date {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+  }
+  .exp-city {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .cities {
+    color: black;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+  }
+  
+  .grid {
+    background-color: grey;
+    color: blueviolet;
+    font-weight: 700;
+    margin: 20px;
+    padding-right: 10px;
+    text-align: center;
+    border: 2px darkorchid;
+    border-radius: 25px;
+  }
+
+  .uvdesign {
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    border-radius: 20px;
+  }
