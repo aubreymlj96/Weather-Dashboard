@@ -60,7 +60,7 @@ The Script contributes the following:
 
 ## Usage
 
-./image-ref/06-server-side-apis-homework-demo.png
+![This image was used as a reference for the layout and overall function of the dashboard](./image-ref/06-server-side-apis-homework-demo.png)
 
 ## Credits
 
@@ -69,6 +69,14 @@ Erik (TA) assisted with setting up the search history.
 Web Source : Reference for use grid above - https://getbootstrap.com/docs/4.1/layout/grid/ 
 
 Web Source : Reference for fahrenheit symbol - https://stackoverflow.com/questions/3312001/degrees-symbol-as-in-degrees-celsius-fahrenheit-in-a-textview 
+
+Web Source : Reference for Open Weather API guide for the Current Weather API call - https://openweathermap.org/current
+
+Web Source : Reference for the fetch request for latitude/longitude - https://openweathermap.org/api/geocoding-api
+
+Web Source : Reference for Open Weather API guide for the 5 day forecast - https://openweathermap.org/forecast5 
+
+
 
 ## License
 
