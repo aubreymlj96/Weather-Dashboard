@@ -66,6 +66,8 @@ The Script contributes the following:
 
 Erik (TA) assisted with setting up the search history.
 
+Jehyun Jung (Calendy Tutor) advised on the cross origin/integrity fields for the bootstrap link.
+
 Web Source : Reference for use grid above - https://getbootstrap.com/docs/4.1/layout/grid/ 
 
 Web Source : Reference for fahrenheit symbol - https://stackoverflow.com/questions/3312001/degrees-symbol-as-in-degrees-celsius-fahrenheit-in-a-textview 

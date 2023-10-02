@@ -102,26 +102,21 @@ $('#submitBtn').on('click', function(event){
     event.preventDefault();
     cityPicked = $('#city').val().trim();
     console.log(citySearched);
-    // if((citySearched) == (cityPicked)){
-    //     (citySearched).push(cityPicked);
-
-    // }
-    // $(cityPicked).addClass('col-sm-2 card w-100');
-
-    // searchHistory();
     getApi();
-    // citySearched = JSON.parse(localStorage.getItem('cities'));
+
+    if (citySearched.length > 4){
+        citySearched.shift();
+    }
     citySearched.push(cityPicked);
     localStorage.setItem('cities', JSON.stringify(citySearched));
     $('city').val('');
     getHistory();
-    // $('issues').css('block');
 });
 
 function getHistory(){
     $('#city-list').empty();
     for(i = citySearched.length-1; i >= 0; i--){
-        let button = $('<button>').addClass("row btn btn-primary m-2 p-2 history-button");
+        let button = $('<button>').addClass("btn btn-primary m-2 p-2 history-button");
         button.attr("id", citySearched[i]);
         button.text(citySearched[i]);
         $('#city-list').append(button);
@@ -132,61 +127,25 @@ function getHistory(){
     })
 }
 
-// const searchTerm = document.getElementById("searched");
-// const cityEl = document.getElementById("city");
-
-// submitBtn.addEventListener("click", function () {
-//     const searchTerm = cityEl.value;
-//     getCurrentWeather(searchTerm);
-//     sendSearchHistory.push(searchTerm);
-//     localStorage.setItem("searched", JSON.stringify(citySearched));
-//     sendSearchHistory();
-// })
-
-// const historyEl = document.getElementById('history');
-
-// function sendSearchHistory() {
-//     historyEl.innerHTML = "";
-//     for (let i = 0; i < citySearched.length; i++) {
-//         const historyItem = document.createElement("input");
-//         historyItem.setAttribute("type", "text color-white");
-//         historyItem.setAttribute("class", "form-control d-block bg-gray");
-//         historyItem.setAttribute("value", sendSearchHistory[i]);
-//         historyItem.addEventListener("click", function () {
-//             getCurrentWeather(historyItem.value);
-//         })
-//         historyEl.append(historyItem);
-//     }
-// };
-
-
-// searchHistory();
-
 $(document).on('click', '.cities', function(){
     cityPicked = $(this).text();
     $(cityPicked).on('click', getApi)
     getApi();
     searchHistory();
     refreshPage();
-    // getFiveDaysApi();
+
 });
 
-function searchHistory(){
-    var recentSearch = [];
-    recentSearch.push((citySearched).val());
-}
-
-
-function refreshPage(event){
-    $('#clear-history').on('click', '.cities', function(){
+$('#clear-history').on('click', function(event){
     event.preventDefault();
-    localStorage.removeItem('city');
+    console.log('test');
+    localStorage.removeItem('cities');
     document.location.reload();
-})};
+});
 
 getHistory();
 
-//
+
 
 
 
