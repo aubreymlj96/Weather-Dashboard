@@ -26,7 +26,7 @@ function getApi(){
 var apiKey = '8975142747d99cc3145ba3f9f2b188db';
 
 function getCurrentWeather(lat, lon){
-    const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
     
     
     fetch(weatherUrl)
@@ -54,7 +54,7 @@ function getCurrentWeather(lat, lon){
 var getFiveDays = [];
 
 function getFiveDaysApi(lat, lon){
-    const urlRequest = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    const urlRequest = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
     
     fetch(urlRequest)
